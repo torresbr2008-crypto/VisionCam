@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/control_panel_width"
+    android:layout_height="wrap_content"
+    android:background="@color/control_panel_background"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_normal">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/title_control_panel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnCloseControl"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/btn_close"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="@dimen/padding_normal"
+        android:background="@color/light_gray" />
+
+    <!-- Zoom Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_normal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnZoomIn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/padding_small"
+            android:backgroundTint="@color/accent_blue"
+            android:text="@string/btn_zoom_in"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnZoomOut"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:backgroundTint="@color/accent_blue"
+            android:text="@string/btn_zoom_out"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <!-- Movement Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_normal"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Up Button -->
+        <Button
+            android:id="@+id/btnMoveUp"
+            android:layout_width="@dimen/button_height"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:backgroundTint="@color/accent_green"
+            android:text="@string/btn_move_up"
+            android:textColor="@color/white" />
+
+        <!-- Left, Right Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnMoveLeft"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/padding_small"
+                android:backgroundTint="@color/accent_green"
+                android:text="@string/btn_move_left"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnMoveRight"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/padding_small"
+                android:backgroundTint="@color/accent_green"
+                android:text="@string/btn_move_right"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <!-- Down Button -->
+        <Button
+            android:id="@+id/btnMoveDown"
+            android:layout_width="@dimen/button_height"
+            android:layout_height="@dimen/button_height"
+            android:backgroundTint="@color/accent_green"
+            android:text="@string/btn_move_down"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
