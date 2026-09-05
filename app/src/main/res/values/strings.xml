@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VisionCam</string>
+    <string name="btn_open_camera">Abrir Câmera</string>
+    <string name="btn_capture">Captura</string>
+    <string name="btn_gallery">Galeria</string>
+    <string name="btn_minimize">Minimizar</string>
+    <string name="btn_close">Sair</string>
+    <string name="btn_zoom_in">Zoom +</string>
+    <string name="btn_zoom_out">Zoom -</string>
+    <string name="btn_move_left">←</string>
+    <string name="btn_move_right">→</string>
+    <string name="btn_move_up">↑</string>
+    <string name="btn_move_down">↓</string>
+    <string name="title_control_panel">CONTROLE</string>
+    <string name="title_floating_panel">VISIONCAM</string>
+    <string name="camera_permission_required">Permissão de câmera é necessária</string>
+    <string name="storage_permission_required">Permissão de armazenamento é necessária</string>
+    <string name="image_captured">Imagem capturada com sucesso</string>
+    <string name="error_opening_camera">Erro ao abrir câmera</string>
+    <string name="select_image">Selecione uma imagem</string>
+</resources>
