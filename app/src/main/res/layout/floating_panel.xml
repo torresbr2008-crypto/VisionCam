@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/floating_panel_width"
+    android:layout_height="wrap_content"
+    android:background="@color/panel_background"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_normal">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/title_floating_panel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnMinimize"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/btn_minimize"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_dialog_info" />
+
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="@dimen/padding_small"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="@string/btn_close"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="@dimen/padding_normal"
+        android:background="@color/light_gray" />
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/btnOpenCamera"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:backgroundTint="@color/button_background"
+        android:text="@string/btn_open_camera"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnCapture"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:backgroundTint="@color/accent_green"
+        android:text="@string/btn_capture"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnGallery"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:backgroundTint="@color/button_background"
+        android:text="@string/btn_gallery"
+        android:textColor="@color/white" />
+
+</LinearLayout>
